@@ -1,0 +1,35 @@
+.rainbow{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.rotate{
+  animation-name: rainbow;
+  animation-duration: 4s;
+  transform: rotate(360deg);
+}
+@keyframes rainbow {
+  0%   {color: red;}
+  30%  {color: orange;}
+  50%  {color: green;}
+  100% {color: blue;}
+}
+@keyframes neon {
+  0%   {animation: glow 1s ease-in-out infinite alternate;}
+  30%  {color: orange;}
+  50%  {color: green;}
+  100% {color: blue;}
+}
+.neon{
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
